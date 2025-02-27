@@ -1,2 +1,2 @@
-{{ $paginator := .Paginate (where .Data.Pages "Section" "post") }}
-{{ partial "posts.html" . }}
+{{ $paginator := .Paginate (where .Data.Pages "Section" "blog") }}
+{{ partial "blog.html" . }}
