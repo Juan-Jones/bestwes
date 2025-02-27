@@ -1,9 +1,11 @@
 {{ define "header" }}
 <!-- Post Header -->
 <style type="text/css">
+   <style type="text/css">
     header.intro-header {
-        background-image: url('{{ if .Params.image }}{{ .Params.image | relURL }}{{ else }}{{ .Site.Params.header_image | relURL}}{{ end }}')
-    }
+    position: relative;
+    background-image: url('{{ if .Params.image }}{{ .Params.image | relURL }}{{ else }}{{ .Site.Params.header_image | relURL}}{{ end }}');
+}
 </style>
 {{ if eq .Params.headerstyle "text" }}
 <header class="intro-header style-text" >
