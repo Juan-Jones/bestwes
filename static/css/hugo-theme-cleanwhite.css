@@ -990,3 +990,28 @@ body{
       display: none;
     }
   }
+
+  .intro-header {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.intro-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust for darkness */
+    z-index: 1;
+}
+
+.intro-header .post-heading {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+}
+
