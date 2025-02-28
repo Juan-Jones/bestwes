@@ -1,7 +1,6 @@
 {{ define "header" }}
 <!-- Post Header -->
 <style type="text/css">
-   <style type="text/css">
     header.intro-header {
     position: relative;
     background-image: url('{{ if .Params.image }}{{ .Params.image | relURL }}{{ else }}{{ .Site.Params.header_image | relURL}}{{ end }}');
