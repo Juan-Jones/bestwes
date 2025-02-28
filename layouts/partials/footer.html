@@ -4,16 +4,6 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                    {{ with .Site.Params.social.email }}
-                    <li>
-                        <a href="mailto:{{ . }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           {{ end }}
                     {{ with .Site.Params.social.twitter }}
                     <li>
                         <a href="{{ . }}">
@@ -24,7 +14,7 @@
                         </a>
                     </li>
                     {{ end }}
-                    {{ with .Site.Params.social.zhihu }}
+                    {{ with .Site.Params.social.pinterest }}
                     <li>
                         <a target="_blank" href="{{ . }}">
                             <span class="fa-stack fa-lg">
