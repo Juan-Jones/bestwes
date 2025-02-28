@@ -28,8 +28,8 @@
                     <li>
                         <a href="{{ "/" | relLangURL }}">All Posts</a>
                     </li>
-                    {{ if not .Site.Params.omit_categories }}
-                        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                    {{ if not .Site.Params.omit_category }}
+                        {{ range $name, $taxonomy := .Site.Taxonomies.category }}
                         <li>
                             <a href="{{ "category/" | relLangURL }}{{ $name | urlize }}/">{{ $name }}</a>
                         </li>
